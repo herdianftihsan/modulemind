@@ -85,3 +85,5 @@ const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
     console.log(`🚀 Backend Server berjalan di http://localhost:${PORT}`);
 });
+
+module.exports = app;
