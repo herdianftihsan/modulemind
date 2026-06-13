@@ -81,9 +81,19 @@ Skema JSON:
     }
 });
 
-const PORT = process.env.PORT || 8080;
-app.listen(PORT, () => {
-    console.log(`🚀 Backend Server berjalan di http://localhost:${PORT}`);
+app.get('/', (req, res) => {
+    res.status(200).json({ 
+        status: "success", 
+        message: "ModuleMind API is running perfectly on Vercel! 🚀",
+        author: "Herdian Immanuel"
+    });
 });
+
+if (process.env.NODE_ENV !== 'production') {
+    const PORT = process.env.PORT || 8080;
+    app.listen(PORT, () => {
+        console.log(`Server lokal berjalan di http://localhost:${PORT}`);
+    });
+}
 
 module.exports = app;
