@@ -96,4 +96,7 @@ if (process.env.NODE_ENV !== 'production') {
     });
 }
 
-module.exports = app;
+const PORT = process.env.PORT || 7860;
+app.listen(PORT, '0.0.0.0', () => {
+    console.log(`ModuleMind API is running on port ${PORT}`);
+});
