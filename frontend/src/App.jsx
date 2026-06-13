@@ -77,7 +77,7 @@ export default function App() {
     setError(null);
 
     try {
-      const response = await fetch("http://localhost:8080/api/v1/generate-pack", {
+      const response = await fetch("https://modulemind.vercel.app/api/v1/generate-pack", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ topic: prompt, difficulty: "Menengah", duration: "2 Jam" }),
