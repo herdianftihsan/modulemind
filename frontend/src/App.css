@@ -1,0 +1,287 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ==========================================================================
+   MODULEMIND LIGHT THEME OVERRIDES
+   ========================================================================== */
+
+/* ── BASE ─────────────────────────────────────────────── */
+html.light, html.light body {
+  background-color: #f0f4f8;
+  color: #1e293b;
+}
+
+/* ── TRANSITION on all elements ───────────────────────── */
+html.light * {
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.15s ease;
+}
+
+/* ── ROOT WRAPPER ─────────────────────────────────────── */
+html.light .min-h-screen {
+  background-color: #f0f4f8 !important;
+  color: #1e293b !important;
+}
+
+/* ── NAV ──────────────────────────────────────────────── */
+html.light nav {
+  background-color: rgba(240,244,248,0.95) !important;
+  border-bottom-color: #cbd5e1 !important;
+}
+html.light nav .text-zinc-100 { color: #0f172a !important; }
+html.light nav .text-zinc-500 { color: #475569 !important; }
+html.light nav .border-zinc-700 { border-color: #cbd5e1 !important; }
+html.light nav .bg-zinc-900 { background-color: #e2e8f0 !important; }
+html.light nav .bg-zinc-800 { background-color: #e2e8f0 !important; }
+html.light nav button:hover { color: #0f172a !important; }
+html.light nav a:hover { color: #0f172a !important; }
+
+html.light nav .border-zinc-700.bg-zinc-900 {
+  background-color: #e2e8f0 !important;
+  border-color: #94a3b8 !important;
+}
+html.light nav .border-zinc-700.bg-zinc-900:hover {
+  background-color: #cbd5e1 !important;
+}
+
+/* ── MAIN BACKGROUND ──────────────────────────────────── */
+html.light .bg-zinc-950 { background-color: #f0f4f8 !important; }
+html.light .bg-zinc-900 { background-color: #e8eef5 !important; }
+html.light .bg-zinc-800 { background-color: #dde5ef !important; }
+
+/* ── BORDERS ──────────────────────────────────────────── */
+html.light .border-zinc-800 { border-color: #cbd5e1 !important; }
+html.light .border-zinc-700 { border-color: #94a3b8 !important; }
+html.light .border-zinc-600 { border-color: #64748b !important; }
+html.light .divide-zinc-800 > * + * { border-color: #cbd5e1 !important; }
+html.light .divide-x > * + * { border-color: #cbd5e1 !important; }
+html.light .divide-y > * + * { border-color: #cbd5e1 !important; }
+
+/* ── TEXT COLORS ──────────────────────────────────────── */
+html.light .text-zinc-50  { color: #0f172a !important; }
+html.light .text-zinc-100 { color: #0f172a !important; }
+html.light .text-zinc-200 { color: #1e293b !important; }
+html.light .text-zinc-300 { color: #334155 !important; }
+html.light .text-zinc-400 { color: #475569 !important; }
+html.light .text-zinc-500 { color: #64748b !important; }
+html.light .text-zinc-600 { color: #475569 !important; }
+html.light .text-zinc-700 { color: #334155 !important; }
+html.light .text-zinc-900 { color: #f8fafc !important; }
+
+/* ── HOVER TEXT ───────────────────────────────────────── */
+html.light .hover\:text-zinc-200:hover { color: #0f172a !important; }
+html.light .hover\:text-zinc-100:hover { color: #0f172a !important; }
+
+/* ── HERO EYEBROW BADGE ───────────────────────────────── */
+html.light .bg-emerald-950\/60 {
+  background-color: rgba(209,250,229,0.7) !important;
+}
+html.light .border-emerald-900 { border-color: #6ee7b7 !important; }
+
+/* ── HERO PRIMARY CTA ─────────────────────────────────── */
+html.light .bg-zinc-100 {
+  background-color: #0f172a !important;
+  color: #f8fafc !important;
+}
+html.light .hover\:bg-white:hover {
+  background-color: #1e293b !important;
+  color: #f8fafc !important;
+}
+
+/* ── SECONDARY CTA BORDER BUTTON ──────────────────────── */
+html.light a.border-zinc-700,
+html.light button.border-zinc-700 {
+  border-color: #94a3b8 !important;
+  color: #475569 !important;
+}
+html.light a.border-zinc-700:hover,
+html.light button.border-zinc-700:hover {
+  border-color: #475569 !important;
+  color: #0f172a !important;
+}
+
+/* ── STATS STRIP ──────────────────────────────────────── */
+html.light .border-t.border-zinc-800 { border-color: #cbd5e1 !important; }
+html.light .border-l.border-zinc-800 { border-color: #cbd5e1 !important; }
+html.light .h-px.bg-zinc-800 { background-color: #cbd5e1 !important; }
+
+/* ── HOW IT WORKS GRID ────────────────────────────────── */
+html.light .bg-zinc-800.border.border-zinc-800.rounded-xl {
+  background-color: #cbd5e1 !important;
+  border-color: #cbd5e1 !important;
+}
+html.light .relative.bg-zinc-950.p-7 { background-color: #f8fbff !important; }
+html.light .relative.bg-zinc-950.p-7:hover { background-color: #eef4fc !important; }
+html.light .text-zinc-800.leading-none { color: #e2e8f0 !important; }
+html.light .group:hover .group-hover\:text-zinc-700 { color: #cbd5e1 !important; }
+html.light .bg-zinc-900.border.border-zinc-700 {
+  background-color: #e2e8f0 !important;
+  border-color: #94a3b8 !important;
+}
+
+/* ── GENERATOR FORM ───────────────────────────────────── */
+html.light .rounded-xl.border.border-zinc-700.bg-zinc-900 {
+  background-color: #ffffff !important;
+  border-color: #94a3b8 !important;
+  box-shadow: 0 1px 8px 0 rgba(15,23,42,0.07);
+}
+html.light textarea {
+  color: #1e293b !important;
+  background-color: transparent !important;
+}
+html.light textarea::placeholder { color: #94a3b8 !important; }
+html.light .bg-zinc-900\/80 {
+  background-color: rgba(241,245,249,0.9) !important;
+  border-top-color: #cbd5e1 !important;
+}
+html.light .hover\:bg-zinc-800\/70:hover { background-color: rgba(226,232,240,0.8) !important; }
+html.light .hover\:border-zinc-700:hover { border-color: #94a3b8 !important; }
+html.light .text-zinc-700.group-hover\:text-emerald-400 { color: #94a3b8 !important; }
+
+/* ── RESULT SECTION — TABS ────────────────────────────── */
+html.light .border.border-zinc-700.rounded-lg.bg-zinc-900.overflow-hidden {
+  background-color: #e8eef5 !important;
+  border-color: #94a3b8 !important;
+}
+html.light .border-r.border-zinc-800 { border-color: #cbd5e1 !important; }
+html.light .bg-zinc-100.text-zinc-900 {
+  background-color: #0f172a !important;
+  color: #f8fafc !important;
+}
+html.light .hover\:bg-zinc-800:hover {
+  background-color: #dde5ef !important;
+  color: #0f172a !important;
+}
+
+/* ── TAB CONTENT BOX ──────────────────────────────────── */
+html.light .rounded-xl.border.border-zinc-700.overflow-hidden.bg-zinc-900 {
+  background-color: #ffffff !important;
+  border-color: #94a3b8 !important;
+  box-shadow: 0 1px 6px 0 rgba(15,23,42,0.06);
+}
+html.light .bg-zinc-950.rounded-lg.p-5.border.border-zinc-800 {
+  background-color: #f1f5f9 !important;
+  border-color: #cbd5e1 !important;
+}
+html.light .text-zinc-300.leading-\[1\.8\] { color: #334155 !important; }
+html.light .bg-zinc-800.border-b.border-zinc-700 {
+  background-color: #e2e8f0 !important;
+  border-bottom-color: #94a3b8 !important;
+}
+html.light .bg-zinc-600 { background-color: #94a3b8 !important; }
+html.light .bg-zinc-950.p-5,
+html.light .p-5.overflow-x-auto.max-h-\[480px\].overflow-y-auto.bg-zinc-950 {
+  background-color: #f8fafc !important;
+}
+html.light .text-emerald-300 { color: #059669 !important; }
+html.light .hover\:bg-zinc-700:hover { background-color: #dde5ef !important; }
+html.light .bg-zinc-950.p-8 { background-color: #f1f5f9 !important; }
+
+/* Bug list items */
+html.light .bg-zinc-950.border.border-zinc-800.hover\:border-red-900\/60 {
+  background-color: #f8fafc !important;
+  border-color: #e2e8f0 !important;
+}
+html.light .bg-zinc-950.border.border-zinc-800.hover\:border-red-900\/60:hover {
+  border-color: rgba(185,28,28,0.4) !important;
+}
+html.light .text-zinc-300.leading-relaxed { color: #334155 !important; }
+
+/* ── DOWNLOAD ZIP BUTTON ──────────────────────────────── */
+html.light button.bg-zinc-100.hover\:bg-white {
+  background-color: #0f172a !important;
+  color: #f8fafc !important;
+}
+html.light button.bg-zinc-100.hover\:bg-white:hover {
+  background-color: #1e293b !important;
+}
+
+/* ── EXAMPLE CASES CARDS ──────────────────────────────── */
+html.light .rounded-xl.border.border-zinc-800.bg-zinc-900.p-5 {
+  background-color: #ffffff !important;
+  border-color: #cbd5e1 !important;
+  box-shadow: 0 1px 4px 0 rgba(15,23,42,0.06);
+}
+html.light .rounded-xl.border.border-zinc-800.bg-zinc-900.p-5:hover {
+  border-color: #475569 !important;
+  background-color: #f1f5f9 !important;
+}
+html.light .border-t.border-zinc-800.\:mt-4 { border-color: #e2e8f0 !important; }
+
+html.light .bg-blue-950  { background-color: #dbeafe !important; }
+html.light .text-blue-400 { color: #1d4ed8 !important; }
+html.light .border-blue-800 { border-color: #93c5fd !important; }
+html.light .bg-violet-950 { background-color: #ede9fe !important; }
+html.light .text-violet-400 { color: #7c3aed !important; }
+html.light .border-violet-800 { border-color: #c4b5fd !important; }
+html.light .bg-red-950  { background-color: #fee2e2 !important; }
+html.light .text-red-400 { color: #dc2626 !important; }
+html.light .border-red-900 { border-color: #fca5a5 !important; }
+html.light .bg-red-900.text-red-400 {
+  background-color: #fee2e2 !important;
+  color: #dc2626 !important;
+}
+html.light span.border.border-zinc-700.bg-zinc-900 {
+  background-color: #e8eef5 !important;
+  border-color: #94a3b8 !important;
+}
+
+/* ── WHY IT MATTERS ───────────────────────────────────── */
+html.light .rounded-xl.border.border-zinc-800.bg-zinc-900.overflow-hidden {
+  background-color: #ffffff !important;
+  border-color: #cbd5e1 !important;
+  box-shadow: 0 1px 8px 0 rgba(15,23,42,0.07);
+}
+html.light .px-8.py-12.border-b.border-zinc-800 { border-bottom-color: #e2e8f0 !important; }
+html.light .grid.sm\:grid-cols-3.divide-y.sm\:divide-y-0.sm\:divide-x.divide-zinc-800 > * + * {
+  border-color: #e2e8f0 !important;
+}
+html.light .w-9.h-9.rounded-md.bg-zinc-800.border.border-zinc-700 {
+  background-color: #e8eef5 !important;
+  border-color: #94a3b8 !important;
+}
+
+/* ── FINAL CTA ────────────────────────────────────────── */
+html.light .text-zinc-700.text-xs { color: #64748b !important; }
+html.light .inline-flex.bg-zinc-100 {
+  background-color: #0f172a !important;
+  color: #f8fafc !important;
+}
+html.light .inline-flex.bg-zinc-100:hover { background-color: #1e293b !important; }
+html.light .text-zinc-700.font-mono { color: #64748b !important; }
+
+/* ── SKELETON LOADING ─────────────────────────────────── */
+html.light .bg-zinc-700.rounded { background-color: #cbd5e1 !important; }
+html.light .h-8.rounded-md.bg-zinc-800 { background-color: #e2e8f0 !important; }
+html.light .border.border-zinc-800.rounded-xl.p-6.bg-zinc-900 {
+  background-color: #e8eef5 !important;
+  border-color: #cbd5e1 !important;
+}
+html.light .h-3.bg-zinc-700 { background-color: #cbd5e1 !important; }
+html.light .h-3.bg-zinc-800 { background-color: #e2e8f0 !important; }
+html.light .text-zinc-600.text-center { color: #64748b !important; }
+
+/* ── FOOTER ───────────────────────────────────────────── */
+html.light footer {
+  background-color: #e8eef5 !important;
+  border-top-color: #cbd5e1 !important;
+}
+html.light footer .text-zinc-600 { color: #475569 !important; }
+html.light footer .text-zinc-700 { color: #64748b !important; }
+html.light footer .text-zinc-100 { color: #0f172a !important; }
+html.light footer .border-zinc-800 { border-color: #cbd5e1 !important; }
+html.light footer .bg-zinc-900 { background-color: #dde5ef !important; }
+html.light footer .bg-zinc-800 { background-color: #dde5ef !important; }
+html.light footer a:hover { color: #0f172a !important; }
+html.light footer .border-t.border-zinc-800 { border-color: #cbd5e1 !important; }
+html.light footer .pt-6.border-t.border-zinc-800 { border-color: #cbd5e1 !important; }
+html.light footer a.border-zinc-800.bg-zinc-900 {
+  background-color: #e2e8f0 !important;
+  border-color: #94a3b8 !important;
+}
+html.light footer a.border-zinc-800.bg-zinc-900:hover {
+  background-color: #cbd5e1 !important;
+  border-color: #64748b !important;
+}
+html.light footer .text-zinc-500 { color: #475569 !important; }
+html.light footer .hover\:text-zinc-300:hover { color: #0f172a !important; }
